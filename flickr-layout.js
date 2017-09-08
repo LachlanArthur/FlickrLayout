@@ -199,4 +199,4 @@ class FlickrLayoutRow {
     }
 }
 FlickrLayout.init();
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=flickr-layout.js.map
