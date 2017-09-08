@@ -46,7 +46,7 @@ $( '.gallery' ).flickrLayout( {
 ## Options
 
 Setting | Type | Default | Note
-- | - | - | -
+-- | -- | -- | --
 maxRowHeight | `number` | `400` | Rows will not exceed this height (except for the last row if `expandLastRow` is `true`)
 gutter | `number` | `20` | Gap between images (vertical & horizontal)
 expandLastRow | `boolean` | `true` | Increase the height of the last row to fill up remaining space
