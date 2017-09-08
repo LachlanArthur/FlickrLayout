@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Flickr Layout Demo</title>
+
+	<style>
+		*, *::before, *::after {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			font-size: 1rem;
+			font-weight: normal;
+			line-height: 1.5;
+			color: #212529;
+			text-align: left;
+			background-color: #fff;
+		}
+		.container {
+			margin-right: auto;
+			margin-left: auto;
+			padding-right: 15px;
+			padding-left: 15px;
+			width: 100%;
+		}
+		@media (min-width: 576px)  { .container { max-width:  540px; } }
+		@media (min-width: 768px)  { .container { max-width:  720px; } }
+		@media (min-width: 992px)  { .container { max-width:  960px; } }
+		@media (min-width: 1200px) { .container { max-width: 1140px; } }
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1>Flickr Layout</h1>
+
+		<h2><a href="https://github.com/LachlanArthur/FlickrLayout">https://github.com/LachlanArthur/FlickrLayout</a></h2>
+
+		<div class="gallery">
+			<img src="demo-img/1.png" />
+			<img src="demo-img/4.png" />
+			<img src="demo-img/3.png" />
+			<img src="demo-img/2.png" />
+			<img src="demo-img/5.png" />
+			<img src="demo-img/9.png" />
+			<img src="demo-img/4.png" />
+			<img src="demo-img/1.png" />
+			<img src="demo-img/7.png" />
+			<img src="demo-img/8.png" />
+			<img src="demo-img/6.png" />
+			<img src="demo-img/10.png" />
+			<img src="demo-img/2.png" />
+			<img src="demo-img/6.png" />
+			<img src="demo-img/3.png" />
+			<img src="demo-img/7.png" />
+			<img src="demo-img/8.png" />
+			<img src="demo-img/5.png" />
+			<img src="demo-img/9.png" />
+			<img src="demo-img/10.png" />
+		</div>
+
+	</div>
+
+	<script src="flickr-layout.js"></script>
+	<script>
+		document.addEventListener( 'DOMContentLoaded', e => {
+			new FlickrLayout( document.querySelector('.gallery'), {
+				maxRowHeight: 200,
+				gutter: 15,
+			} );
+		} );
+	</script>
+
+</body>
+
+</html>
