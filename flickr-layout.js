@@ -141,6 +141,10 @@ class FlickrLayoutItem {
             this.height = this.img.height;
             callback();
         });
+        // Image was already loaded
+        if (this.img.complete) {
+            this.img.dispatchEvent(new CustomEvent('load'));
+        }
     }
     getWidthByHeight(newHeight) {
         return (this.width / this.height) * newHeight;
